@@ -1,0 +1,1851 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="preconnect" href="//www.googletagmanager.com">
+	<link rel="preconnect" href="//zz.bdstatic.com">
+	<link rel="preconnect" href="//sp0.baidu.com">
+	<link rel="preconnect" href="//www.google-analytics.com">
+	<link rel="preconnect" href="//cdn1.lncld.net">
+	<link rel="preconnect" href="//unpkg.com">
+	<link rel="preconnect" href="//app-router.leancloud.cn">
+	<link rel="preconnect" href="//9qpuwspm.api.lncld.net">
+	<link rel="preconnect" href="//gravatar.loli.net">
+
+	<title>等保2.0表格 | 哲</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="哲">
+	<meta name="description" content>
+
+	
+	<meta name="keywords" content>
+	
+
+	
+	<link rel="shortcut icon" href="https://gss0.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/562c11dfa9ec8a13a77d0296f103918fa0ecc065.jpg">
+	<link rel="apple-touch-icon" href="https://gss0.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/562c11dfa9ec8a13a77d0296f103918fa0ecc065.jpg">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="哲">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="等保2.0表格 | 哲">
+	<meta property="og:description" content>
+	<meta property="og:url" content="http://yoursite.com/2019/11/30/%E7%AD%89%E4%BF%9D2-0%E8%A1%A8%E6%A0%BC/">
+
+	
+	<meta property="article:published_time" content="2019-11-30T22:11:00+08:00"> 
+	<meta property="article:author" content="哲">
+	<meta property="article:published_first" content="哲, /2019/11/30/%E7%AD%89%E4%BF%9D2-0%E8%A1%A8%E6%A0%BC/">
+	
+
+	
+	
+	<link rel="stylesheet" href="/css/allinonecss.min.css">
+
+	
+	
+	
+</head>
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header post-site-header outer">
+    <div class="inner">
+        
+<nav class="site-nav"> 
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                
+                
+                <a class="site-nav-logo" href="/" title="哲">
+                    <img src="https://avatars2.githubusercontent.com/u/24631601?s=400&u=0278b392ffde2d694970adf79f0a9896e943cee1&v=4" alt="哲">
+                </a>
+                
+                
+            </li>
+            
+            
+            <li>
+                <a href="/about" title="作者">作者</a>
+            </li>
+            
+            <li>
+                <a href="/Pi" title="树莓派Pi">树莓派Pi</a>
+            </li>
+            
+            <li>
+                <a href="/ARCHIVES" title="归档">归档</a>
+            </li>
+            
+            
+        </ul> 
+    </div>
+    
+    <div class="search-button-area">
+        <a href="#search" class="search-button">Search ...</a>
+    </div>
+     
+    <div class="site-nav-right">
+        
+        <a href="#search" class="search-button">Search ...</a>
+         
+        
+<div class="social-links">
+    
+    <a class="social-link" title="weibo" href="https://weibo.com/sujiazhe" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1141 1024" xmlns="http://www.w3.org/2000/svg"><path d="M916.48 518.144q27.648 21.504 38.912 51.712t9.216 62.976-14.336 65.536-31.744 59.392q-34.816 48.128-78.848 81.92t-91.136 56.32-94.72 35.328-89.6 18.944-75.264 7.68-51.712 1.536-49.152-2.56-68.096-10.24-78.336-21.504-79.872-36.352-74.24-55.296-59.904-78.848q-16.384-29.696-22.016-63.488t-5.632-86.016q0-22.528 7.68-51.2t27.136-63.488 53.248-75.776 86.016-90.112q51.2-48.128 105.984-85.504t117.248-57.856q28.672-10.24 63.488-11.264t57.344 11.264q10.24 11.264 19.456 23.04t12.288 29.184q3.072 14.336 0.512 27.648t-5.632 26.624-5.12 25.6 2.048 22.528q17.408 2.048 33.792-1.536t31.744-9.216 31.232-11.776 33.28-9.216q27.648-5.12 54.784-4.608t49.152 7.68 36.352 22.016 17.408 38.4q2.048 14.336-2.048 26.624t-8.704 23.04-7.168 22.016 1.536 23.552q3.072 7.168 14.848 13.312t27.136 12.288 32.256 13.312 29.184 16.384zM658.432 836.608q26.624-16.384 53.76-45.056t44.032-64 18.944-75.776-20.48-81.408q-19.456-33.792-47.616-57.344t-62.976-37.376-74.24-19.968-80.384-6.144q-78.848 0-139.776 16.384t-105.472 43.008-72.192 60.416-38.912 68.608q-11.264 33.792-6.656 67.072t20.992 62.976 42.496 53.248 57.856 37.888q58.368 25.6 119.296 32.256t116.224 0.512 100.864-21.504 74.24-33.792zM524.288 513.024q20.48 8.192 38.912 18.432t32.768 27.648q10.24 12.288 17.92 30.72t10.752 39.424 1.536 42.496-9.728 38.912q-8.192 18.432-19.968 37.376t-28.672 35.328-40.448 29.184-57.344 18.944q-61.44 11.264-117.76-11.264t-88.064-74.752q-12.288-39.936-13.312-70.656t16.384-66.56q13.312-27.648 40.448-51.712t62.464-38.912 75.264-17.408 78.848 12.8zM361.472 764.928q37.888 3.072 57.856-18.432t21.504-48.128-15.36-47.616-52.736-16.896q-27.648 3.072-43.008 23.552t-17.408 43.52 9.728 42.496 39.424 21.504zM780.288 6.144q74.752 0 139.776 19.968t113.664 57.856 76.288 92.16 27.648 122.88q0 33.792-16.384 50.688t-35.328 17.408-35.328-14.336-16.384-45.568q0-40.96-22.528-77.824t-59.392-64.512-84.48-43.52-96.768-15.872q-31.744 0-47.104-15.36t-14.336-34.304 18.944-34.304 51.712-15.36zM780.288 169.984q95.232 0 144.384 48.64t49.152 146.944q0 30.72-10.24 43.52t-22.528 11.264-22.528-14.848-10.24-35.84q0-60.416-34.816-96.256t-93.184-35.84q-19.456 0-28.672-10.752t-9.216-23.04 9.728-23.04 28.16-10.752z"/></svg>
+    </a>
+    
+    
+    <a class="social-link" title="github" href="https://github.com/sujiazhe" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<div id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <div class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2019-11-30T14:57:22.000Z">
+                    2019-11-30
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                
+            </div>
+            <h1 class="post-full-title">等保2.0表格</h1>
+        </header>
+        <div class="post-full no-image">
+            
+            <div class="post-full-content">
+                <article id="photoswipe" class="markdown-body">
+                    <div class="htmledit_views" id="content_views">
+                                            <table cellspacing="0"><tbody><tr><td style="text-align:center;vertical-align:middle;width:96pt;"><span style="color:#000000;">序号</span></td>
+            <td style="text-align:center;vertical-align:middle;width:112.2pt;"><span style="color:#000000;">大项</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">测评指标</span></td>
+            <td style="text-align:left;vertical-align:middle;width:244.8pt;"><span style="color:#000000;">测评对象</span></td>
+            <td style="text-align:left;vertical-align:middle;width:327pt;"><span style="color:#000000;">测评实施</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">判定标准</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"><span style="color:#000000;">安全通信网络</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">网络架构</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应保证网络设备的业务处理能力满足业务高峰期需要</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">路由器、交换机、无线接人设备和防火墙等提供网络通信功能的设备或相关组件。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查业务高峰时期一段时间内主要网络设备的CPU使用率和内存使用率是否满足 需要；<br>
+            2） 应核查网络设备是否从未出现过因设备性能问题导致的宕机情况；<br>
+            3） 应测试验证设备是否满足业务高峰期需求。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"><span style="color:#000000;">8.1.2</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">网络架构</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应保证网络各个部分的带宽满足业务高峰期需要。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">综合网管系统等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查综合网管系统各通信链路带宽是否满足高峰时段的业务流量需要；<br>
+            2） 应测试验证网络带宽是否满足业务高峰期需求。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">网络架构</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应划分不同的网络区域，并按照方便管理和控制的原则为各网络区域分配地址。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">路由器、交换机、无线接入设备和防火墙等提供网络通信功能的设备或相关组件。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否依据重要性、部门等因素划分不同的网络区域；<br>
+            2） 应核查相关网络设备配置信息，验证划分的网络区域是否与划分原则一致。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">通信传输</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应避免将重要网络区域部署在边界处，重要网络区域与其他网络区域之间应采取可 靠的技术隔离手段。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">网络拓扑。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查网络拓扑图是否与实际网络运行环境一致；<br>
+            2） 应核查重要网络区域是否未部署在网络边界处；<br>
+            3） 应核查重要网络区域与其他网络区域之间是否采取可靠的技术隔离手段，如网闸、防火墙 和设备访问控制列表（ACL）等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">通信传输</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应采用校验技术或密码技术保证通信过程中数据的完整性</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">提供检验技术或密码技术功能的设备或组件</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查是否在通信过程中采取保密措施，具体采用哪些技术措施<br>
+            2）应测试验证在通信过程中是否对数据进行加密</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">可信验证</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">可基于可信根对通信设备的系统引导程序、系统程序、重要配置参数和通信应用程序等进行可信验证，并在应用程序的关键执行环节进行动态可信验证，在检测到其可信性受到破坏后进行报警，并将验证结果形成审计记录送到安全管理中心</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">提供可信验证的设备或组件、提供集中审计功能的系统。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否基于可信根对通信设备的系统引导程序、系统程序、重要配置参数和通信应用 程序等进行可信验证；<br>
+            2） 应核查是否在应用程序的关键执行环节进行动态可信验证；<br>
+            3） 应测试验证当检测到通信设备的可信性受到破坏后是否进行报警；<br>
+            4） 应测试验证结果是否以审计记录的形式送至安全管理中心。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜4）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"><span style="color:#000000;">安全区域边界</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">边界防护</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应保证跨越边界的访问和数据流通过边界设备提供的受控接口进行通信。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">网闸、防火墙、路由器、交换机和无线接人网关设备等提供访问控制功能的设备或相 关组件。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查在网络边界处是否部署访问控制设备；<br>
+            2） 应核查设备配置信息是否指定端口进行跨越边界的网络通信，指定端口是否配置并启用 了安全策略；<br>
+            3） 应采用其他技术手段（如非法无线网络设备定位、核査设备配置信息等）核查或测试验证 是否不存在其他未受控端口进行跨越边界的网络通信。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">单元判定:如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"><span style="color:#000000;">8.1.3</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">边界防护</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应能够对非授权设备私自联到内部网络的行为进行检查或限制。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端管理系统或相关设备。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否采用技术措施防止非授权设备接人内部网络；<br>
+            2） 应核查所有路由器和交换机等相关设备闲置端口是否均已关闭。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">边界防护</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应能够对内部用户非授权联到外部网络的行为进行检查或限制。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端管理系统或相关设备。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否采用技术措施防止内部用户存在非法外联行为。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">边界防护</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应限制无线网络的使用，保证无线网络通过受控的边界设备接人内部网络。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">网络拓扑和无线网络设备。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查无线网络的部署方式，是否单独组网后再连接到有线网络<br>
+            2）应核查无线网络是否通过受控的边界防护设备接入到内部有线网络</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">访问控制</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应在网络边界或区域之间根据访问控制策略设置访问控制规则，默认情况下除允许通信外受控接口拒绝所有通信</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">网闸、防火墙、路由器、交换机和无线接人网关设备等提供访问控制功能的设备或相 关组件。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查在网络边界或区域之间是否部署访问控制设备并启用访问控制策略<br>
+            2）应核查设备的最后一条访问控制第一生产力是否为禁止所有网络通信</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">访问控制</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应删除多余或无效的访问控制规则，优化访问控制列表，并保证访问控制规则数量最小化</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">网闸、防火墙、路由器、交换机和无线接人网关设备等提供访问控制功能的设备或相 关组件。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查是否不存在多余或无效的访问控制策略<br>
+            2）应核查不同的访问控制策略之间的逻辑关系及前后排列顺序是否合理</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">访问控制</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对源地址、目的地址、源端口、目的端口和协议等进行检查，以允许/拒绝数据包进出。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">网闸、防火墙、路由器、交换机和无线接人网关设备等提供访问控制功能的设备或相关组件。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查设备的访问控制策略中是否设定了源地址、目的地址、源端口、目的端口和协议等 相关配置参数；<br>
+            2） 应测试验证访问控制策略中设定的相关配置参数是否有效。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">访问控制</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应能根据会话状态信息为进出数据流提供明确的允许/拒绝访问的能力。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">网闸、防火墙、路由器、交换机和无线接入网关设备等提供访问控制功能的设备或相 关组件。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否采用会话认证等机制为进出数据流提供明确的允许/拒绝访问的能力；<br>
+            2） 应测试验证是否为进出数据流提供明确的允许/拒绝访问的能力。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">访问控制</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对进出网络的数据流实现基于应用协议和应用内容的访问控制。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">第二代防火墙等提供应用层访问控制功能的设备或相关组件。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否部署访问控制设备并启用访问控制策略；<br>
+            2） 应测试验证设备访问控制策略是否能够对进出网络的数据流实现基于应用协议和应用内 容的访问控制。</span></td>
+            <td style="text-align:left;vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">入侵防范</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应在关键网络节点处检测、防止或限制从外部发起的网络攻击行为。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">抗APT攻击系统、网络回溯系统、威胁情报检测系统、抗DDoS攻击系统和人侵保 护系统或相关组件。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查相关系统或组件是否能够检测从外部发起的网络玫击行为；<br>
+            2） 应核查相关系统或组件的规则库版本或威胁情报库是否已经更新到最新版本；<br>
+            3） 应核查相关系统或组件的配置信息或安全策略是否能够覆盖网络所有关键节点；<br>
+            4）应测试验证相关系统或组件的配置信息或安全策略是否有效。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜4）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">入侵防范</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应在关键网络节点处检测、防止或限制从内部发起的网络攻击行为。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">抗APT攻击系统、网络回溯系统、威胁情报检测系统、抗DDoS攻击系统和人侵保 护系统或相关组件。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查相关系统或组件是否能够检测到从内部发起的网络攻击行为<br>
+            2）应核查相关系统或组件的规则库版本或威胁情报库是否已经更新到最新版本<br>
+            3）应核查相关系统或组件的配置信息或安全策略是否能够覆盖网络所有的关键节点<br>
+            4）应测试验证相关系统或组件的配置信息或安全策略是否有效</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜4）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">入侵防范</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应采取技术措施对网络行为进行分析，实现对网络攻击特别是新型网络攻击行为的分析</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">搞APT攻击系统、网络回溯系统和威胁情报检测系统或相关组件</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查是否部署相关系统或组件对新型网络攻击进行检测和分析<br>
+            2）应测试验证是否对网络行为进行分析，实现对网络攻击特别是未知的新型网络攻击的检查和分析。</span></td>
+            <td style="text-align:left;vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">入侵防范</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">当检测到攻击行为时，记录攻击源IP、攻击类型、攻击目标、攻击时间，在发生严重 人侵事件时应提供报警。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">抗APT攻击系统、网络回溯系统、威胁情报检测系统、抗DDoS攻击系统和入侵保 护系统或相关组件。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查相关系统或组件的记录是否包括攻击源IP、攻击类型、攻击目标、攻击时间等相关 内容；<br>
+            2） 应测试验证相关系统或组件的报警策略是否有效。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">恶意代码和垃圾邮件防范 </span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应在关键网络节点处对恶意代码进行检测和清除，并维护恶意代码防护机制的升级 和更新。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">防病毒网关和UTM等提供防恶意代码功能的系统或相关组件。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查在关键网络节点处是否部署防恶意代码产品等技术措施；<br>
+            2） 应核查防恶意代码产品运行是否正常,恶意代码库是否已经更新到最新；<br>
+            3） 应测试验证相关系统或组件的安全策略是否有效。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">恶意代码和垃圾邮件防范 </span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应在关键网络节点处对垃圾邮件进行检测和防护，并维护垃圾邮件防护机制的升级 和更新。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">防垃圾邮件网关等提供防垃圾邮件功能的系统或相关组件。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查在关键网络节点处是否部署了防垃圾邮件产品等技术措施；<br>
+            2） 应核查防垃圾邮件产品运行是否正常，防垃圾邮件规则库是否已经更新到最新；<br>
+            3） 应测试验证相关系统或组件的安全策略是否有效。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全审计</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应在网络边界、重要网络节点进行安全审计，审计覆盖到每个用户，对重要的用户行 为和重要安全事件进行审计。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">综合安全审计系统等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否部署了综合安全审计系统或类似功能的系统平台；<br>
+            2） 应核查安全审计范围是否覆盖到每个用户；<br>
+            3） 应核查是否对重要的用户行为和重要安全事件进行了审计。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全审计</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">审计记录应包括事件的日期和时间、用户、事件类型、事件是否成功及其他与审计相<br>
+            关的信息。</span></td>
+            <td style="text-align:left;vertical-align:middle;width:244.8pt;"><span style="color:#000000;">综合安全审计系统等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查审计记录信息是否包括事件的日期和时间、用户、事件类型、事件是否成功及 其他与审计相关的信息。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全审计</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对审计记录歩预期的删除、修改或覆盖等</span></td>
+            <td style="text-align:left;vertical-align:middle;width:244.8pt;"><span style="color:#000000;">综合安全审计系统等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查是否采取了技术措施对审计记录进行保护<br>
+            2）应核查是否采取技术措施对审计记录进行定期备份，并核查其备份策略</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全审计</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应能对远程访问的用户行为、访问互联网的用户行为等单独进行为审计和数据分析</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">上网行为管理系统或综合安全审计系统</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否对远程访问用户及互联网访问用户行为单独时行审计分析</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">可信验证</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">可基于可信根对边界设备的系统引导程序、系统程序、重要配置参数和边界防护应用程序等进行可信验证，并在应用程序的关键执行环节进行动态可信验证，在检测到其可信性受到破坏后进行报警，并将验证结果形成审计记录送至安全管理中心。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">提供可信验证的设备或组件、提供集中审计功能的系统。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否基于可信根对边界设备的系统引导程序、系统程序、重要配置参数和边界防护 应用程序等进行可信验证；<br>
+            2） 应核查是否在应用程序的关键执行环节进行动态可信验证；<br>
+            3） 应测试验证当检测到边界设备的可信性受到破坏后是否进行报警；<br>
+            4） 应测试验证结果是否以审计记录的形式送至安全管理中心。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜4）均为肯定，则符合本测评单元指标要求＞，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"><span style="color:#000000;">安全计算环境</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">身份鉴别</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对登录的用户进行身份标识和鉴别，身份标识具有唯一性，身份鉴别信息具有复 杂度要求并定期更换。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备、控制设备、业务应用系统、数据库管理系统、中间件和 系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查用户在登录时是否采用了身份鉴别措施；<br>
+            2） 应核查用户列表确认用户身份标识是否具有唯一性；<br>
+            3） 应核查用户配置信息或测试验证是否不存在空口令用户；<br>
+            4） 应核查用户鉴别信息是否具有复杂度要求并定期更换。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜4）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"><span style="color:#000000;">8.1.4</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">身份鉴别</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应具有登录失败处理功能，应配置并启用结束会话、限制非法登录次数和当登录连 接超时自动退出等相关措施。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备、控制设备、业务应用系统、数据库管理系统、中间件和 系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否配置并启用了登录失败处理功能；<br>
+            2） 应核查是否配置并启用了限制非法登录功能，非法登录达到一定次数后采取特定动作，如 账户锁定等；<br>
+            3） 应核查是否配置并启用了登录连接超时及自动退出功能。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">身份鉴别</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">当进行远程管理时，应采取必要措施防止鉴别信息在网络传输过程中被窃听。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端:移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备、控制设备、业务应用系统、数据库管理系统、中间件和 系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否采用加密等安全方式对系统进行远程管理，防止鉴别信息在网络传输过 程中被窃听。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">身份鉴别</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应采用口令、密码技术、生物技术等两种或两种以上组合的鉴别技术对用户进行身 份鉴别，且其中一种鉴别技术至少应使用密码技术来实现。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端:移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备、控制设备、业务应用系统、数据库管理系统、中间件和 系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查是否采用动态口令、数据证书、生物技术和设备指纹等两种或两种以上组合鉴别技术对用户身份进行鉴别<br>
+            2）应核查基本一种鉴别技术是否使用密码技术来实现</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">访问控制</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对登陆的用户分配帐户和权限</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端:移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备、控制设备、业务应用系统、数据库管理系统、中间件和 系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查是否为用户分配了帐户和权限及相关设置情况<br>
+            2）应核查是否已禁用或限制匿名、默认帐户的访问权限</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">访问控制</span></td>
+            <td style="text-align:left;vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应重命名或删除默认账户，修改默认账户的默认口令。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器#设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备、控制设备、业务应用系统、数据库管理系统、中间件和 系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否已经重命名默认账户或默认账户已被删除；<br>
+            2） 应核查是否已修改默认账户的默认口令。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）或2）为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">访问控制</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应及时删除或停用多余的、过期的账户，避免共享账户的存在。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备、控制设备、业务应用系统、数据库管理系统、中间件和 系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否不存在多余或过期账户，管理员用户与账户之间是否一一对应；<br>
+            2） 应测试验证多余的、过期的账户是否被删除或停用。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">访问控制</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应授予管理用户所需的最小权限，实现管理用户的权限分离。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备、控制设备、业务应用系统、数据库管理系统、中间件和 系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否进行角色划分；<br>
+            2） 应核查管理用户的权限是否已进行分离；<br>
+            3） 应核查管理用户权限是否为其工作任务所需的最小权限。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">访问控制</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应由授权主体配置访问控制策略，访问控制策略规定主体对客体的访问规则。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、业务应用系统、数据库管理系统、中间件和系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否由授权主体（如管理用户）负责配置访问控制策略；<br>
+            2） 应核查授权主体是否依据安全策略配置了主体对客体的访问规则；<br>
+            3） 应测试验证用户是否有可越权访问情形。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评<br>
+             </span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">访问控制</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">访问控制的粒度应达到主体为用户级或进程级，客体为文件、数据库表级。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、业务应用系统、数据库管理系统、中间件和系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查访问控制策略的控制粒度是否达到主体为用户级或进程级，客体为文件、数 据库表、记录或字段级。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">访问控制</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对重要主体和客体设置安全标记，并控制主体对有安全标记信息资源的访问。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、业务应用系统、数据库管理系统、中间件和系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否对主体、客体设置了安全标记；<br>
+            2） 应测试验证是否依据主体、客体安全标记控制主体对客体访问的强制访问控制策略。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全审计</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应启用安全审计功能，审计覆盖到每个用户，对重要的用户行为和重要安全事件进 行审计。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备、控制设备、业务应用系统、数据库管理系统、中间件和 系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否开启了安全审计功能；<br>
+            2） 应核查安全审计范围是否覆盖到每个用户；<br>
+            3） 应核查是否对重要的户行为和重要安全事件进行审计。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全审计</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">审计记录应包括事件的日期和时间、用户、事件类型、事件是否成功及其他与审计相 关的信息。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备、控制设备、业务应用系统、数据库管理系统、中间件和 系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查审计记录信息是否包括事件的日期和时间、用户、事件类型、事件是否成功及 其他与审计相关的信息。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全审计</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对审计记录进行保护，定期备份，避免受到未预期的删除、修改或覆盖等。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备、控制设备、业务应用系统、数据库管理系统、中间件和 系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否采取了保护措施对审计记录进行保护；<br>
+            2） 应核查是否采取技术措施对审计记录进行定期备份,并核查其备份策略。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全审计</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对审计进程进行保护，防止未经授权的中断。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备、控制设备、业务应用系统、数据库管理系统、中间件和 系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应测试验证通过非审计管理员的其他账户来中断审计进程，验证审计进程是否受到 保护。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">入侵防范</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应遵循最小安装的原则，仅安装需要的组件和应用程序。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备和控制设备等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否遵循最小安装原则；<br>
+            2） 应核查是否未安装非必要的组件和应用程序。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">入侵防范</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应关闭不需要的系统服务、默认共享和高危端口。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备和控制设备等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否关闭了非必要的系统服务和默认共享；<br>
+            2） 应核查是否不存在非必要的高危端口。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">入侵防范</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应通过设定终端接人方式或网络地址范围对通过网络进行管理的管理终端进行 限制。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备和控制设备等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查配置文件或参数是否对终端接人范围进行限制。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">入侵防范</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应提供数据有效性检验功能，保证通过人机接口输人或通过通信接口输人的内容符 合系统设定要求。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">业务应用系统、中间件和系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查系统设计文档的内容是否包括数据有效性检验功能的内容或模块；<br>
+            2） 应测试验证是否对人机接口或通信接口输人的内容进行有效性检验。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均夫肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">入侵防范</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应能发现可能存在的已知漏洞，并在经过充分测试评估后，及时修补漏洞。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备、控制设备、业务应用系统、数据库管理系统、中间件和 系统管理软件等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应通过漏洞扫描、渗透测试等方式核查是否不存在高风险漏洞；<br>
+            2） 应核查是否在经过充分测试评估后及时修补漏洞。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">入侵防范</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应能够检测到对重要节点进行人侵的行为，并在发生严重人侵事件时提供报警。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、网络设备（包 括虚拟网络设备）、安全设备（包括虚拟安全设备）、移动终端、移动终端管理系统、移动终端管 理客户端、感知节点设备、网关节点设备和控制设备等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈并核查是否有入侵检测的措施；<br>
+            2） 应核查在发生严重人侵事件时是否提供报警。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">恶意代码防范</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应采用免受恶意代码攻击的技术措施或主动免疫可信验证机制及时识别人侵和病 毒行为，并将其有效阻断。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统（包括宿主机和虚拟机操作系统）、移动终端、移 动终端管理系统、移动终端管理客户端和控制设备等。</span></td>
+            <td style="text-align:left;vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否安装了防恶意代码软件或相应功能的软件，定期进行升级和更新防恶意代 码库；<br>
+            2） 应核查是否采用主动免疫可信验证技术及时识别人侵和病毒行为；<br>
+            3） 应核查当识别人侵和病毒行为时是否将其有效阻断。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和3）或2）和3）均为肯定，则符合本测评单元指标要求，否则不符合或部分 符合本测评单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">可信验证</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">可基于可信根对计算设备的系统引导程序、系统程序、重要配置参数和应用程序等 进行可信验证，并在应用程序的关键执行环节进行动态可信验证，在检测到其可信性受到破坏 后进行报警，并将验证结果形成审计记录送至安全管理中心。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">提供可信验证的设备或组件、提供集中审计功能的系统。</span></td>
+            <td style="text-align:justify;vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否基于可信根对计算设备的系统引导程序、系统程序、重要配置参数和应用程序 等进行可信验证；<br>
+            2） 应核查是否在应用程序的关键执行环节进行动态可信验证；<br>
+            3） 应测试验证当检测到计算设备的可信性受到破坏后是否进行报警；<br>
+            4） 应测试验证结果是否以审计记录的形式送至安全管理中心。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜4）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="text-align:left;vertical-align:middle;"><span style="color:#000000;">数据完整性</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应采用校验技术或密码技术保证重要数据在传输过程中的完整性，包括但不限于鉴 别数据、重要业务数据、重要审计数据、重要配置数据、重要视频数据和重要个人信息等。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">业务应用系统、数据库管理系统、中间件、系统管理软件及系统设计文档、数据安全 保护系统、终端和服务器等设备中的操作系统及网络设备和安全设备等。</span></td>
+            <td style="text-align:justify;vertical-align:middle;width:327pt;"><span style="color:#000000;"> 1）应核查系统设计文档，鉴别数据、重要业务数据、重要审计数据、重要配置数据、重要视频 数据和重要个人信息等在传输过程中是否采用了校验技术或密码技术保证完整性；<br>
+            2） 应测试验证在传输过程中对鉴别数据、重要业务数据、重要审计数据、重要配置数据、重要 视频数据和重要个人信息等进行篡改，是否能够检测到数据在传输过程中的完整性受到 破坏并能够及时恢复。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="text-align:left;vertical-align:middle;"><span style="color:#000000;">数据完整性</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应采用校验技术或密码技术保证重要数据在存储过程中的完整性，包括但不限于鉴 别数据、重要业务数据、重要审计数据、重要配置数据、重要视频数据和重要个人信息等。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">业务应用系统、数据库管理系统、中间件、系统管理软件及系统设计文档、数据安全 保护系统、终端和服务器等设备中的操作系统及网络设备和安全设备中等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查设计文档，是否采用了校验技术或密码技术保证鉴别数据、重要业务数据、重要审 计数据、重要配置数据、重要视频数据和重要个人信息等在存储过程中的完整性；<br>
+            2） 应核查是否采用技术^措施（如数据安全保护系统等）保证鉴别数据、重要业务数据、重要审 计数据、重要配置数据、重要视频数据和重要个人信息等在存储过程中的完整性；<br>
+            3） 应测试验证在存储过程中对鉴别数据、重要业务数据、重要审计数据、重要配置数据、重要 视频数据和重要个人信息等进行篡改，是否能够检测到数据在存储过程中的完整性受到 破坏并能够及时恢复。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">数据保密性</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应采用密码技术保证重要数据在传输过程中的保密性，包括但不限于鉴别数据、重 要业务数据和重要个人信息等。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">业务应用系统、数据库管理系统、中间件和系统管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查系统设计文档，鉴别数据、重要业务数据和重要个人信息等在传输过程中是否采用 密码技术保证保密性；<br>
+            2） 应通过嗅探等方式抓取传输过程中的数据包，鉴别数据、重要业务数据和重要个人信息等 在传输过程中是否进行了加密处理。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">数据保密性</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应采用密码技术保证重要数据在存储过程中的保密性，包括但不限于鉴别数据、重 要业务数据和重要个人信息等。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">业务应用系统、数据库管理系统、中间件、系统管理软件及系统设计文档、数据安全 保护系统、终端和服务器等设备中的操作系统及网络设备和安全设备中的重要配置数据。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否采用密码技术保证鉴别数据、重要业务数据和重要个人信息等在存储过程中 的保密性；<br>
+            2） 应核查是否采用技术措施（如数据安全保护系统等）保证鉴别数据、重要业务数据和重要 个人信息等在存储过程中的保密性；<br>
+            3） 应测试验证是否对指定的数据进行加密处理。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">数据备份恢复</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应提供重要数据的本地数据备份与恢复功能。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">配置数据和业务数据。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否按照备份策略进行本地备份；<br>
+            2） 应核查备份策略设置是否合理、配置是否正确；<br>
+            3） 应核查备份结果是否与备份策略一致；<br>
+            4） 应核查近期恢复测试记录是否能够进行正常的数据恢复。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜4）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">数据备份恢复</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应提供异地实时备份功能，利用通信网络将重要数据实时备份至备份场地</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">配置数据和业务数据。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否提供异地实时备份功能，并通过网络将重要配置数据、重要业务数据实时备份至备份场地。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">剩余信息保护</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应保证鉴别信息所在的存储空间被释放或重新分配前得到完全清除。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统、业务应用系统、数据库管理系统、中间件和系统 管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查相关配置信息或系统设计文档，用户的鉴别信息所在的存储空间被释放或重 新分配前是否得到完全清除。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">剩余信息保护</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应保证存有敏感数据的存储空间被释放或重新分配前得到完全清除。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">终端和服务器等设备中的操作系统、业务应用系统、数据库管理系统、中间件和系统 管理软件及系统设计文档等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查相关配置信息或系统设计文档，敏感数据所在的存储空间被释放或重新分配 给其他用户前是否得到完全清除。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元|指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">个人信息保护</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应仅采集和保存业务必需的用户个人信息。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">业务应用系统和数据库管理系统等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查采集的用户个人信息是否是业务应用必需的；<br>
+            2） 应核查是否制定了有关用户个人信息保护的管理制度和流程。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">个人信息保护</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应禁止未授权访问和非法使用用户个人信息。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">业务应用系统和数据库管理系统等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否采用技术措施限制对用户个人信息的访问和使用；<br>
+            2） 应核查是否制定了有关用户个人信息保护的管理制度和流程。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"><span style="color:#000000;">安全管理中心</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">系统管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对系统管理员进行身份鉴别，只允许其通过特定的命令或操作界面进行系统管理 操作，并对这些操作进行审计。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">提供集中系统管理功能的系统。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否对系统管理员进行身份鉴别；<br>
+            2） 应核査是否只允许系统管理员通过特定的命令或操作界面进行系统管理操作；<br>
+            3） 应核查是否对系统管理的操作进行审计。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"><span style="color:#000000;">8.1.5</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">系统管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应通过系统管理员对系统的资源和运行进行配置、控制和管理，包括用户身份、资源 配置、系统加载和启动、系统运行的异常处理、数据和设备的备份与恢复等。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">提供集中系统管理功能的系统。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否通过系统管理员对系统的资源和运行进行配置、控制和管理，包括用户身份、资源配置、系统加载和启动、系统运行的异常处理、处理和设备的备份与恢复等</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">审计管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对审计管理员进行身份鉴别，只允许其通过特定的命令或操作界面进行安全审计 操作，并对这些操作进行审计。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">综合安全审计系统、数据库审计系统等提供集中审计功能的系统。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否对审计管理员进行身份鉴别；<br>
+            2） 应核查是否只允许审计管理员通过特定的命令或操作界面进行安全审计操作；<br>
+            3） 应核查是否对安全审计操作进行审计。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">审计管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应通过审计管理员对审计记录进行分析，并根据分析结果进行处理，包括根据安全 审计策略对审计记录进行存储、管理和查询等。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">综合安全审计系统、数据库审计系统等提供集中审计功能的系统。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否通过审计管理员对审计记录进行分析，并根据分析结果进行处理，包括 根据安全审计策略对审计记录进行存储、管理和查询等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对安全管理员进行身份鉴别，只允许其通过特定的命令或操作界面进行安全管理 操作，并对这些操作进行审计。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">提供集中安全管理功能的系统。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否对安全管理员进行身份鉴别；<br>
+            2） 应核查是否只允许安#管理员通过特定的命令或操作界面进行安全审计操作；<br>
+            3） 应核查是否对安全管理操作进行审计。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评<br>
+            单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应通过安全管理员对系统中的安全策略进行配置，包括安全参数的设置，主体、客体 进行统一安全标记，对主体进行授权，配置可信验证策略等。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">提供集中安全管理功能的系统。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否通过安全管理员对系统中的安全策略进行配置，包括安全参数的设置， 主体、客体进行统一安全标记，对主体进行授权，配置可信验证策略等。</span></td>
+            <td style="text-align:left;vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">集中管控</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应划分出特定的管理区域，对分布在网络中的安全设备或安全组件进行管控。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">网络拓扑</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否划分出单独的网络区域用于部署安全设备或安全组件；<br>
+            2） 应核查各个安全设备或安全组件是否集中部署在单独的网络区域内。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">集中管控</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应能够建立一条安全的信息传输路径，对网络中的安全设备或安全组件进行管理。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">路由器、交换机和防火墙等设备或相关组件。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否采用安全方式（如SSH、HTTPS、IPSec VPN等）对安全设备或安全组件进行 管理；<br>
+            2） 应核查是否使用独立的带外管理网络对安全设备或安全组件进行管理。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）或2）为肯定，则符合本测评单元指标要求，否则不符合本测评单元指标 要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">集中管控</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对网络链路、安全设备、网络设备和服务器等的运行状况进行集中监测。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">综合网管系统等提供运行状态监测功能的系统</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否部署了具备运行状态监测功能的系统或设备，能够对网络链路、安全设备、网<br>
+            络设备和服务器等的运行状况进行集中监测； *<br>
+            2） 应测试验证运行状态监测系统是否根据网络链路、安全设备、网络设备和服务器等的工作 状态、依据设定的阀值（或默认阀值）实时报警。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）或2）为肯定，则符合本测评单元指标要求，否则不符合本测评单元指标 要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">集中管控</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对分散在各个设备上的审计数据进行收集汇总和集中分析,并保证审计记录的留 存时间符合法律法规要求。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">综合安全审计系统、数据库审计系统等提供集中审计功能的系统。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查各个设备是否配置并启用了相关策略，将审计数据发送到独立于设备自身的外部集中安全审计系统中<br>
+            2）应核查是否部署统一的集中安全审计系统，统一收集和存储各设备日志，并根据需要进行集中审计分析<br>
+            3）应核查审计记录的留存时间是否至少6个月</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评<br>
+            单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">集中管控</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对安全策略、恶意代码、补丁升级等安全相关事项进行集中管理</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">提供集中系统管理功能的系统。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查是否能够对安全策略（如防火墙访问控制策略、入侵保护系统防护策略、WAF安全防护策略等）进行集中管理<br>
+            2）应核查是否实现对操作系统防恶意代码系统及网络恶意代码防护设备的集中管理，实现对防恶意代码病毒规则库的升级进行集中管理<br>
+            3）应核查是否实现对各个系统或设备的补丁升级进行集中管理 </span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评<br>
+            单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">集中管控</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应能对网络中发生的各类安全事件进行识别、报警和分析。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">提供集中安全管控功能的系统。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否部署了相关系统平台能够对各类安全事件进行分析并通过声光等方式实时 报警；<br>
+            2） 应核查监测范围是否能够覆盖网络所有关键路径。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"><span style="color:#000000;">安全管理制度</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全策略</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应制定网络安全工作的总体方针和安全策略，阐明机构安全工作的总体目标、范围、 原则和安全框架等。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">总体方针策略类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查网络安全工作的总体方针和安全策略文件是否明确机构安全工作的总体目 标、范围、原则和各类安全策略。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"><span style="color:#000000;">8.1.6</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">管理制度</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对安全管理活动中的各类管理内容建立安全管理制度。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">安全管理制度类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查各项安全管理制度是否覆盖物理、网络、主机系统、数据、应用、建设和运维等 管理内容。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">管理制度</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对管理人员或操作人员执行的日常管理操作建立操作规程。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">操作规程类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否具有日常管理操作的操作规程，如系统维护手册和用户操作规程等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">管理制度</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应形成由安全策略、管理制度、操作规程、记录表单等构成的全面的安全管理制度 体系。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">总体方针策略类文档、管理制度类文档、操作规程类文档和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查总体方针策略文件、管理制度和操作规程、记录表单是否全面且具有关联性 和一致性。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元|指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">制定和发布</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应指定或授权专门的部门或人员负责安全管理制度的制定。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">部门/人员职责文件等。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否由专门的部门或人员负责制定安全管理制度。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">制定和发布</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">安全管理制度应通过正式、有效的方式发布，并进行版本控制</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档和记录表单类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查制度制定和发布要求管理文档是否说明安全管理制度的制定和发布程序、格式要求及版本编号等相关内容<br>
+            2）应核查安全管理制度的收发登记记录是否通过正式、有效的方式收发、如正式发文领导签署和单位盖章等</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）或2）为肯定，则符合本测评单元指标要求，否则不符合本测评单元指标 要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">评审和修订</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应定期对安全管理制度的合理性和适用性进行论证和审定，对存在不足或需要改进的安全管理制度进行修订</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">信息/网络安全主管和记录表单类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应访谈信息/网络安全方管是否不定期对安全管理制度的合理性和适用性进行审定<br>
+            2）应核查是否具有安全管理制度审定或论证记录，如果对制度做过修订 ，核查是否有修订版本的安全管理制度</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）或2）为肯定，则符合本测评单元指标要求，否则不符合本测评单元指标 要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"><span style="color:#000000;">安全管理机构 </span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">岗位设置</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应成立指导和网络安全工作的委员会或领导小组，其最高领导由单位主管领导担任 或授权。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">信息/网络安全主管、管理制度类文档和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈信息/网络安全主管是否成立了指导和管理网络安全工作的委员会或领导小组；<br>
+            2） 应核查相关文档是否明确了网络安全工作委员会或领导小组构成情况和相关职责；<br>
+            3） 应核查委员会或领导小组的最高领导是否由单位主管领导担任或由其进行了授权。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"><span style="color:#000000;">8.1.7</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">岗位设置</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应设立网络安全管理工作的职能部门，设立安全主管、安全管理各个方面的负责人 岗位，并定义各负责人的职责。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">信息/网络安全主管和管理制度类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈信息/网络安全主管是否设立网络安全管理工作的职能部门；<br>
+            2） 应核查部门职责文档是否明确网络安全管理工作的职能部门和各负责人职责；<br>
+            3） 应核查岗位职责文档是否有岗位划分情况和岗位职责。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">岗位设置</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应设立系统管理员、审计管理员和安全管理员等岗位，并定义部门及各个工作岗位 的职责。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">信息/网络安全主管和管理制度类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈信息/网络安全主管是否进行了安全管理岗位的划分；<br>
+            2） 应核查岗位职责文档是否明确了各部门及各岗位职责。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">人员配备</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应配备一定数量的系统管理员、审计管理员和安全管理员等。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">信息/网络安全主管和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈信息/网络安全主管是否配备系统管理员、审计管理员和安全管理员；<br>
+            2） 应核查人员配备文档是否明确各岗位人员配备情况。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要枣，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">人员配备</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应配备专职安全管理员，不可兼任</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查人员配备文档是否配备了专职安全管理员。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">授权和审批</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应 根据各个部门和岗位的职责明确授权审批事项、审批部门和批准人等</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档和记录表单类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查部门职责文档是否明确各部分审批事项<br>
+            2）应核查岗位职责文档是否明确岗位审批事项</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要枣，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">授权和审批</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应针对系统变更、重要操作、物理访问和系统接人等事项建立审批程序，按照审批程序执行审批过程，对重要活动建立逐级审批制度</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">操作规程类文档和记录表单类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查系统变更、重要操作、物理访问和系统接入等事项的操作规范是否明确建立了逐级审批程序<br>
+            2）应核查审批记录、操作记录、审批结果是否与相关制度一致</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要枣，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">授权和审批</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应定期审查审批事项，及时更新需授权和审批的项目、审批部门和审批人等信息。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">信息/网络安全主管和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈信息/网络安全主管是否对各类审批事项进行更新；<br>
+            2） 应核查是否具有定期审查审批事项的记录。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">沟通和合作</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应加强各类管理人员、组织内部机构和网络安全管理部门之间的合作与沟通，定期 召开协调会议，共同协作处理网络安全问题。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">信息/网络安全主管和记录表单类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈信息/网络安全主管是否建立了各类管理人员、组织内部机构和网络安全管理部门 之间的合作与沟通机制；<br>
+            2） 应核查会议记录是否明确各类管理人员、组织内部机构和网络安全管理部门之间开展了 合作与沟通。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">沟通和合作</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应加强与网络安全职能部门、各类供应商、业界专家及安全组织的合作与沟通。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">信息/网络安全主管和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈信息/网络安全主管是否建立了与网络安全职能部门、各类供应商、业界专家及安 全组织的合作与沟通机制；<br>
+            2） 应核查会议记录是否与网络安全职能部门、各类供应商、业界专家及安全组织开展了合作 与沟通。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">沟通和合作</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应建立外联单位联系列表，包括外联单位名称、合作内容、联系人和联系方式等 信息。</span></td>
+            <td style="text-align:left;vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查外联单位联系列表是否记录了外联单位名称、合作内容、联系人和联系方式 等信息。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">审核和检查</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应定期进行常规安全检查，检查内容包括系统日常运行、系统漏洞和数据备份等 情况。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">信息/网络安全主管和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈信息/网络安全主管是否定期进行了常规安全检查；<br>
+            2） 应核查常规安全检查记录是否包括了系统日常运行、系统漏洞和数据备份等情况。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">审核和检查</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应定期进行全面安全检查，检查内容包括现有安全技术措施的有效性、安全配置与安全策略的一致性、安全管理制度的执行情况等</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">信息/网络安全主管和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应访谈信息/网络安全检查主管是否定期进行了全面安全检查<br>
+            2）应核查全面安全检查记录是否包括了现有安全技术措施的有效性、安全配置与安全策略的一致性、安全管理制度的执行情况等</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">审核和检查</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应制定安全检查表格实施安全 检查，汇总安全检查数据，形成安全检查报告，并对安全检查结果进行通报</span></td>
+            <td style="text-align:left;vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否具有安全检查表格、安全检查记录、安全检查报告、安全检查结果通报记录</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"><span style="color:#000000;">安全管理人员</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">人员录用</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应指定或授权专门的部门或人员负责人员录用。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">信息/网络安全主管。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应访谈信息/网络安全主管是否由专门的部门或人员负责人员的录用工作。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评_施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"><span style="color:#000000;">8.1.8</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">人员录用</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对被录用人员的身份、安全背景、专业资格或资质等进行审查，对其所具有的技术技能进行考核。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档和记录表单类文档。</span></td>
+            <td style="text-align:left;vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查人员安全管理文档是否说明录用人员应具备的条件（如学历、学位要求，技术人员 应具备的专业技术水平，管理人员应具备的安全管理知识等）；<br>
+            2） 应核查是否具有人员录用时对录用人身份、安全背景、专业资格或资质等进行审查的相关 文档或记录，是否记录审查内容和审查结果等；<br>
+            3） 应核查人员录用时的技能考核文档或记录是否记录考核内容和考核结果等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">人员录用</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应与被录用人员签署保密协议，与关键岗位人员签署岗位责任协议。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="text-align:left;vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查保密协议是否有保密范围、保密责任、违约责任、协议的有效期限和责任人的签字 等内容；<br>
+            2） 应核查岗位安全协议是否有岗位安全责任定义、协议的有效期限和责任人签字等内容。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">人员离岗</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应及时终止离岗人员的所有访问权限，取回各种身份证件、钥匙、徽章等以及机构提 供的软硬件设备。</span></td>
+            <td style="text-align:justify;vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="text-align:justify;vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否具有离岗人员终止其访问权限、交还身份证件、软硬件设备等的登记 记录。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">人员离岗</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应办理严格的调离手续，并承诺调离后的保密义务后方可离开。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查人员离岗的管理文档是否规定了人员调离手续和离岗要求等；<br>
+            2） 应核查是否具有按照离岗程序办理调离手续的记录；.<br>
+            3） 应核查保密承诺文档是否有调离人员的签字。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全意识教育和培训</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对各类人员进行安全意识教育和岗位技能培训，并告知相关的安全责任和惩戒 措施。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查安全意识教育及岗位技能培训文档是否明确培训周期、培训方式、培训内容和考核方式等相关内容<br>
+            2）应核查安全责任和惩戒措施管理文档或培训文档是否包含具体的安全责任和惩戒措施</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全意识教育和培训</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应针对不同岗位制定不同的培训计划，对安全基础知识、岗位操作规程等进行培训</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查安全教育和培训计划文档是否具有不同岗位的培训计划<br>
+            2）应核查培训内容是否包含安全基础知识、岗位操作规程等<br>
+            3）应核查安全教育和培训记录是否有培训人员，培训内容，培训结果等描述</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全意识教育和培训</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应定期对不同岗位的人员进行技能考核</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否具有针对各岗位人员的</span></td>
+            <td style="vertical-align:middle;width:204pt;"> </td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">外部人员访问管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应在外部人员物理访问受控区域前先提出书面申请，批准后由专人全程陪同，并登 记备案。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查外部人员访问管理文档是否明确允许外部人员访问的范围、外部人员进人的条件、外部人员进人的访问控制措施等；<br>
+            2） 应核查外部人员访问重要区域的书面申请文档是否具有批准人允许访问的批准签字等；<br>
+            3） 应核查外部人员访问重要区域的登记记录是否记录了外部人员访问重要区域的进人时 间、离开时间、访问区域及陪同人等；<br>
+            4） 应核查外部人员访问管理文档是否明确允许外部人员访问的范围、外部人员进入的条件、 外部人员进人的访问控制措施等；<br>
+            5） 应核查外部人员访问重要区域的书面申请文档，是否具有批准人允许访问的批准签字等；<br>
+            6） 应核查外部人员访问重要区域的登记记录是否记录了外部人员访问重要区域的进人时 间、离开时间、访问区域及陪同人等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜6）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">外部人员访问管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应在外部人员接人受控网络访问系统前先提出书面申请，批准后由专人开设账户、 分配权限，并登记备案。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查外部人员访问管理文档是否明确外部人员接人受控网络前的申请审批流程；<br>
+            2） 应核查外部人员访问系统的书面申请文档是否明确外部人员的访问权限，是否具有允许 访问的批准签字等；<br>
+            3） 应核查外部人员访问系统的登记记录是否记录了外部人员访问的权限、时限、账户等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">外部人员访问管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">外部人员离场后应及时清除其所有的访问权限。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查外部人员访问管理文档是否明确外部人员离开后及时清除其所有访问权限；<br>
+            2） 应核查外部人员访问系统的登记记录是否记录了访问权限清除时间。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">外部人员访问管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">获得系统访问授权的外部人员应签署保密协议，不得进行非授权操作，不得复制和 泄露任何敏感信息。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查外部人员访问保密协议是否明确人员的保密义务（如不得进行非授权操作， 不得复制信息等）。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单<br>
+            元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"><span style="color:#000000;">安全建设管理</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">定级和备案</span></td>
+            <td style="text-align:left;vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应以书面的形式说明保护对象的安全保护等级及确定等级的方法和理由。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查定级文档是否明确保护对象的安全保护等级，是否说明定级的方法和理由。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"><span style="color:#000000;">8.1.9</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">定级和备案</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应组织相关部门和有关安全技术专家对定级结果的合理性和正确性进行论证和 审定。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查定级结果的论证评审会议记录是否有相关部门和有关安全技术专家对定级 结果的论证意见。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">定级和备案</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应保证定级结果经过相关部门的批准。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查定级结果部门审批文档是否有上级主管部门或本单位相关部门的审批意见。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">定级和备案</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应将备案材料报主管部门和公安机关备案。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否具有公安机关出具的备案证明文档。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单<br>
+            元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全方案设计</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应根据安全保护等级选择基本安全措施，依据风险分析的结果补充和调整安全 措施。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">安全规划设计类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查安全设计文档是否根据安全保护等级选择安全措施，是否根据安全需求调整 安全措施。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全方案设计</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应根据保护对象的安全保护等级及与其他级别保护对象的关系进行安全整体规划 和安全方案设计,设计内容应包含密码技术相关内容，并形成配套文件。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">安全规划设计类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否有总体规划和安全设计方案等配套文件，设计方案中应包含密码技术相 关内容。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全方案设计</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应组织相关部门和有关安全专家对安全整体规划及其配套文件的合理性和正确性 进行论证和审定，经过批准后才能正式实施。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查配套文件的论证评审记录或文档是否有相关部门和有关安全技术专家对总 体安全规划、安全设计方案等相关配套文件的批准意见和论证意见。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">产品采购和使用</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应确保网络安全产品采购和使用符合国家的有关规定。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查有关网络安全产品是否符合国家的有关规定，如网络安全产品获得了销售许 可等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">产品采购和使用</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应确保密码产品与服务的采购和使用符合国家密码主管部门的要求。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">建设负责人和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈建设负责人是否采用了密码产品及其相关服务；<br>
+            2） 应核查密码产品与服务的采购和使用是否符合国家密码管理主管部门的要求。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">产品采购和使用</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应预先对产品进行选型测试，确定产品的候选范围，并定期审定和更新候选产品 名单。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否具有产品选型测试结果文档、候选产品采购清单及审定或更新的记录。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">自行软件开发</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应将开发环境与实际运行环境物理分开，测试数据和测试结果受到控制。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">建设负责人。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈建设负责人自主开发软件是否在独立的物理环境中完成编码和调试，与实际运行 环境分开；<br>
+            2） 应核查测试数据和结果是否受控使用。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">自行软件开发</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应制定软件开发管理制度，明确说明开发过程的控制方法和人员行为准则。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查软件开发管理制度是否明确软件设计、开发、测试和验收过程的控制方法和 人员行为准则，是否明确哪些开发活动应经过授权和审批。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">自行软件开发</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应制定代码编写安全规范，要求开发人员参照规范编写代码。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查代码编写安全规范是否明确代码安全编写规则。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求,否则不符合本测评单<br>
+            元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">自行软件开发</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应具备软件设计的相关文档和使用指南，并对文档使用进行控制。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">软件开发类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否具有软件开发文档和使用指南，并对文档使用进行控制。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求,否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">自行软件开发</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应保证在软件开发过程中对安全性进行测试，在软件安装前对可能存在的恶意代码 进行检测。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否具有软件安全测试报告和代码审计报告，明确软件存在的安全问题及可 能存在的恶意代码。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">自行软件开发</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对程序资源库的修改、更新、发布进行授权和批准，并严格进行版本控制。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查对程序资源库的修改、更新、发布进行授权和审批的文档或记录是否有批准 人的签字。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求,否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">自行软件开发</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应保证开发人员为专职人员，开发人员的开发活动受到控制、监视和审查。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">建设负责人。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应访谈建设负责人开发人员是否为专职，是否对开发人员活动进行控制等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">外包软件开发</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应在软件交付前检测软件其中可能存在的恶意代码。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否具有交付前的恶意代码检测报告。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">外包软件开发</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应保证开发单位提供软件设计文档和使用指南。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">操作规程类文档和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否具有软件开发的相关文档，如需求分析说明书、软件设计说明书等，是否 具有软件操作手册或使用指南。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">外包软件开发</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应保证开发单位提供软件源代码，并审查软件中可能存在的后门和隐蔽信道。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">建设负责人和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈建设负责人委托开发单位是否提供软件源代码；<br>
+            2） 应核查软件测试报告是否审查了软件可能存在的后门和隐蔽信道。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">工程实施</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应指定或授权专门的部门或人员负责工程实施过程的管理。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否指定专门部门或人员对工程实施进行进度和质量控制。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">工程实施</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应制定安全工程实施方案控制工程实施过程。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查安全工程实施方案是否包括工程时间限制、进度控制和质量控制等方面内 容，是否按照工程实施方面的管理制度进行各类控制、产生阶段性文档等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">工程实施</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应通过第三方工程监理控制项目的实施过程。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查工程监理报告是否明确了工程进展、时间计划、控制措施等方面内容。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">测试验收</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应制订测试验收方案，并依据测试验收方案实施测试验收，形成测试验收报告。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查工程测试验收方案是否明确说明参与测试的部门、人员、测试验收内容、现场操作 过程等内容；<br>
+            2） 应核查测试验收报告是否有相关部门和人员对测试验收报告进行审定的意见。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">测试验收</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应进行上线前的安全性测试，并出具安全测试报告，安全测试报告应包含密码应用 安全性测试相关内容。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否具有上线前的安全测试报告，报告应包含密码应用安全性测试相关 内容。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">系统交付</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应制定交付清单，并根据交付清单对所交接的设备、软件和文档等进行清点。</span></td>
+            <td style="text-align:left;vertical-align:middle;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查交付清单是否说明交付的各类设备、软件、文档等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">系统交付</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对负责运行维护的技术人员进行相应的技能培训。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查系统交付技术培训记录是否包括培训内容、培训时间和参与人员等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">系统交付</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应提供建设过程文档和运行维护文档。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查交付文档是否包括建设过程文档和运行维护文档等，提交的文档是否符合管 理规定的要求。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">等级测评</span></td>
+            <td style="text-align:left;vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应定期进行等级测评，发现不符合相应等级保护标准要求的及时整改。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">运维负责人和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈运维负责人本次测评是否为首次，若非首次，是否根据以往测评结果进行相应的安 全整改；<br>
+            2） 应核查是否具有以往等级测评报告和安全整改方案。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">等级测评</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应在发生重大变更或级别发生变化时进行等级测评。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">运维负责人和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否有过重大变更或级别发生过变化及是否进行相应的等级测评；<br>
+            2） 应核查是否具有相应情况下的等级测评报告。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">等级测评</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应确保测评机构的选择符合国家有关规定。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">等级测评报告和相关资质文件</span></td>
+            <td style="text-align:left;vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查以往等级测评的测评单位是否具有等级测评机构资质。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元，标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">服务供应商管理 </span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应确保服务供应商的选择符合国家的有关规定。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">建设负责人。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应访谈建设负责人选择的安全服务商是否符合国家有关规定。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">服务供应商管理 </span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应与选定的服务供应商签订相关协议，明确整个服务供应链各方需履行的网络安全 相关义务。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查与服务供应商签订的服务合同或安全责任书是否明确了后期的技术支持和 服务承诺等内容。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">服务供应商管理 </span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应定期监督、评审和审核服务供应商提供的服务，并对其变更服务内容加以控制。</span></td>
+            <td style="text-align:justify;vertical-align:middle;"><span style="color:#000000;">管理制度类文档和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否具有服务供应商定期提交的安全服务报告；<br>
+            2） 应核查是否定期审核评价服务供应商所提供的服务及服务内容变更情况，是否具有服务 审核报告；<br>
+            3） 应核查是否具有服务供应商评价审核管理制度，明确针对服务供应商的评价指标、考核内 容等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="text-align:left;vertical-align:middle;"><span style="color:#000000;">安全运维管理</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">环境管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应指定专门的部门或人员负责机房安全，对机房出入进行管理，定期对机房供配电、 空调、温湿度控制、消防等设施进行维护管理。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">物理安全负责人和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈物理安全负责人是否指定部门和人员负责机房安全管理工作，对机房的出入进行 管理、对基础设施（如空调、供配电设备、灭火设备等）进行定期维护；<br>
+            2） 应核查部门或人员岗位职责文档是否明确机房安全的责任部门及人员；<br>
+            3） 应核查机房的岀人登记记录是否记录来访人员、来访时间、离开时间、携带物品等信息；<br>
+            4） 应核查机房的基础设施的维护记录是否记录维护日期、维护人、维护设备、故障原因、维护 结果等方面内容。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜4）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"><span style="color:#000000;">8.1.10</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">环境管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应建立机房安全管理制度，对有关物理访问、物品进出和环境安全等方面的管理作 出规定。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查机房安全管理制度是否覆盖物理访问、物品进出和环境安全等方面内容；<br>
+            2） 应核查物理访问、物品进出和环境安全等相关记录是否与制度相符。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">环境管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应不在重要区域接待来访人员，不随意放置含有敏感信息的纸档文件和移动介 质等。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档和办公环境。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查机房安全管理制度是否明确来访人员的接待区域；<br>
+            2） 应核查办公桌面上等位置是否未随意放置了含有敏感信息的纸档文件和移动介质等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">资产管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应编制并保存与保护对象相关的资产清单，包括资产责任部门、重要程度和所处位 置等内容。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="text-align:left;vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查资产清单是否包括资产类别（含设备设施、软件、文档等）、资产责任部门、重 要程度和所处位置等内容。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">资产管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应根据资产的重要程度对资产进行标识管理，根据资产的价值选择相应的管理 措施。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">资产管理员、管理制度类文档和设备。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈资产管理员是否依据资产的重要程度对资产进行标识，不同类别的资产在管理措 施的选取上是否不同；<br>
+            2） 应核查资产管理制度是否明确资产的标识方法以及不同资产的管理措施要求；<br>
+            3） 应核查资产清单中的设备是否具有相应标识，标识方法是否符合2）相关要求。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">资产管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对信息分类与标识方法作出规定，并对信息的使用、传输和存储等进行规范化 管理。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查信息分类文档是否规定了分类标识的原则和方法（如根据信息的重要程度、敏感程 度或用途不同进行分类）；<br>
+            2） 应核查信息资产管理办法是否规定了不同类信息的使用、传输和存储等要求。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">介质管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应将介质存放在安全的环境中，对各类介质进行控制和保护，实行存储介质专人管 理，并根据存档介质的目录清单定期盘点。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">资产管理员和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈资产管理员介质存放环境是否安全，存放环境是否由专人管理；<br>
+            2） 应核查介质管理记录是否记录介质归档、使用和定期盘点等情况。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">介质管理</span></td>
+            <td style="text-align:left;vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对介质在物理传输过程中的人员选择、打包、交付等情况进行控制，并对介质的归 档和查询等进行登记记录。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">资产管理员和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈资产管理员介质在物理传输过程中的人员选择、打包、交付等情况是否进行控制；<br>
+            2） 核查是否对介质的归档和查询等进行登记记录。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">设备维护管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应对各种设备（包括备份和冗余设备）、线路等指定专门的部门或人员定期进行维护管理</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">设备管理和管理制度类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应访谈设备管理员是否对各类设备，线路指定专人或专门部门进行定期维护<br>
+            2）应核查部门或人员岗位职责文档是否明确设备维护管理的责任部门</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">设备维护管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应建立配套设施、软硬件维护方面的管理制度、对其维护进行有效管理，包括明确维护人员责任、维修和服务的审批、维修过程的监督控制等</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档和记录表单类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应检查设备维护管理制度是否明确维护人员责任、维修和服务的审批过程的监督控制等方面内容<br>
+            2）应核查是否留有维修和服务的审批、维修过程等记录，审批、记录内容是否与制度相符</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">设备维护管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">信息处理设备应经过审批才能带离机房或办公地点，含有存储介质的设备带出工作 环境时其中重要数据应加密。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">设备管理员和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈设备管理员含省重要数据的设备带出工作环境是否有加密措施；<br>
+            2） 应访谈设备管理员对带离机房的设备是否经过审批；<br>
+            3） 应核查是否具有设备带离机房或办公地点的审批记录。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">设备维护管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">含有存储介质的设备在报废或重用前，应进行完全清除或被安全覆盖，保证该设备 上的敏感数据和授权软件无法被恢复重用。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">设备管理员。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应访谈设备管理员含有存储介质的设备在报废或重用前，是否采取措施进行完全清 除或被安全覆盖。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">漏洞和风险管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应采取必要的措施识别安全漏洞和隐患，对发现的安全漏洞和隐患及时进行修补或 评估可能的影响后进行修补。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应核查是否有识别安全漏洞和隐患的安全报告或记录（如漏洞扫描报告、渗透测试报告和 安全通报等）；<br>
+            2） 应核查相关记录是否对发现的漏洞及时进行修补或评估可能的影响后进行修补。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">漏洞和风险管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应定期开展安全测评，形成安全测评报告，采取措施应对发现的安全问题。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">安全管理员和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈安全管理员是否定期开展安全测评；<br>
+            2） 应核查是否具有安全测评报告；<br>
+            3） 应核查是否具有安全整改应对措施文档。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">网络和系统安全管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应划分不同的管理员角色进行网络和系统的运维管理，明确各个角色的责任和 权限。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查网络和系统安全管理文档，系统管理员是否划分了不同角色，并定义各个角色的责任和权限。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">网络和系统安全管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应指定专门的部门或人员进行帐户管理，对申请账户、建立帐户、删除帐户等进行控制</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">运维负责人和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应访谈运维负责人是否指定专门的部门或人员进行账户管理<br>
+            2）应核查相关审批记录或流程是否对申请帐户、建立帐户、删除帐户等控制</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">网络和系统安全管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应建立网络和系统安全管理制度、对安全策略、帐户管理、配置管理、日志管理、日常操作系统、升级与打补丁、口令更新周期等方面作出规定。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查网络和系统安全管理制度是否覆盖网络和系统的安全策略、帐户管理（用户责任、义务、风险、权限审批、权限分配、账户注销等）、配置文件的生成 及备份、变更审批、授权访问、最小服务、升级与打补丁、审计日志管理、登录设备和系统的口令更新周期等方面</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">网络和系统安全管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应制定重要设备的配置和制作手册，依据手册对设备进行安全配置和优化配置等。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">操作规程类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查重要设备或系统（如操作系统、数据库、网络设备、安全设备、应用和组件）的配置和操作手册是否明确操作步骤参数配置等内容</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定、则符合本测评单元指标要求，否则不符合本测评单元指标要求</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">网络和系统安全管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应详细记录运维操作日志，包括日常巡检工作、运行维护记录、参数的设置和修改等 内容。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查运维操作日志是否覆盖网络和系统的日常巡检、运行维护、参数的设置和修 改等内容。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单<br>
+            元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">网络和系统安全管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应指定专门的部门或人员对日志、监测和报警数据等进行分析、统计，及时发现可疑 行为。</span></td>
+            <td style="text-align:left;vertical-align:middle;"><span style="color:#000000;">系统管理员和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈网络和系统相关人员是否指定专门部门或人员对日志、监测和报警数据等进行分 析统计；<br>
+            2） 应核查是否具有对日志、监测和报警数据等进行分析统计的报告。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">网络和系统安全管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应严格控制变更性运维，经过审批后才可改变连接、安装系统组件或调整配置参数， 操作过程中应保留不可更改的审计日志，操作结束后应同步更新配置信息库。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">系统管理员和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈网络和系统相关人员调整配置参数结束后是否同步更新配置信息库，并核实配置 信息库是否为最新版本；<br>
+            2） 应核查是否具有变更运维的审批记录，如系统连接、安装系统组件或调整配置参数等 活动；<br>
+            3） 应核查是否具有变更运维的操作过程记录。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">网络和系统安全管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应严格控制运维工具的使用，经过审批后才可接人进行操作，操作过程中应保留不 可更改的审计日志，操作结束后应删除工具中的敏感数据。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">系统管理员和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈系统管理员使用运维工具结束后是否删除工具中的敏感数据；<br>
+            2） 应核查是否具有运维工具接人系统的审批记录；<br>
+            3） 应核查运维工具的审计日志记录，审计日志是否不可以更改。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">网络和系统安全管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应严格控制远程运维开通，经过审批后才可开通远程维护接口或通道，操作过程中应保留不可更改的审计日志，操作结果后立即关闭接口或通道</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">系统管理员和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1)应访谈系统相关人员日常运维过程中是否存在远程运维，若存在，远程运维结束后是否立即关闭了接口或通道<br>
+            2）应核查开通远程运维的审批记录<br>
+            3）应核查针对远程运维的审计日志是否不可以更改</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">网络和系统安全管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应保证所有与外部的连接均得到授权和批准，应定期检查违反规定无线上网及其他违反网络安全第一生产力的行为</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">安全管理员和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应访谈系统相关人员网络外联连接（如互联网、合作伙伴企业网、上级部门网络等）是否都得到授权与批准<br>
+            2）应访谈网络管理员是否定期核查违规联网行为<br>
+            3）应核查是否具有外联授权的记录文档</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">恶意代码防范管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应提高的有用户的防恶意代码意识，对外来计算机存储设备接入系统前进行恶意代码检查等</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">运维负责人和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应访谈运维负责人是否采取培训和告知等方式提升员工的防恶意代码意识<br>
+            2）应检查恶意代码防范管理制度是否明确对外来计算机或存储设备接入系统进行恶意代码检查</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">恶意代码防范管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应定期验证防范恶意代码攻击的技术措施的有效性。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">安全管理员和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）若采用可信验证技术，应访谈安全管理员是否未发生过恶意代码攻击事件;<br>
+            2） 若采用防恶意代码产品，应访谈安全管理员是否定期对恶意代码库进行升级，且对升级情 况进行记录，对各类防病毒产品上截获的恶意代码是否进行分析并汇总上报，是否未出现 过大规模的病毒事件；<br>
+            3） 应核査是否具有恶意代码检测记录、恶意代码库升级记录和分析报告。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）或2）和3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合 本测评单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">配置管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应记录和保存基本配置信息，包括网络拓扑结构、各个设备安装的软件组件、软件组 件的版本和补丁信息、各个设备或软件组件的配置参数等。</span></td>
+            <td style="text-align:left;vertical-align:middle;"><span style="color:#000000;">系统管理员。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应访谈系统管理员是否对基本配置信息进行记录和保存。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">配置管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应将基本配置信息改变纳入变更范畴，实施对配置信息改变的控制，并及时更新基 本配置信息库。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">系统管理员和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈配置管理人员基本配置信息改变后是否及时更新基本配置信息库；<br>
+            2） 应核查配置信息的变更流程是否具有相应的申报审批程序。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">密码管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应遵循密码相关的国家标准和行业标准。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">安全管理员。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应访谈安全管理员密码管理过程中是否遵循密码相关的国家标准和行业标准要求。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">密码管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应使用国家密码管理主管部门认证核准的密码技术和产品。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">安全管理员。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查相关产品是否获得有效的国家密码管理主管部门规定的检测报告或密码产品型号证书。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">变更管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应明确变更需求，变更前根据变更需求制定变更方案，变更方案经过评审、审批后方可实施</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查变更方案是否包含变更类型、变更原因、变更过程、变更前评估等内容<br>
+            2）应核查是否具有变更方案评审记录和变更过程记录文档</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">变更管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应建立变更的申报和审批控制程序，依据程序控制所有的变更，记录变更实施过程</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应核查变更控制的申报、审批程序基是否规定需要申报的变更类型、申报流程、审批部门、批准人等方面内容<br>
+            2）应核查是否具胡变更实施过程的记录文档</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">变更管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应建立中止变更并从失败变更中恢复的程序，明确过程控制方法和人员职责，必要时对恢复过程进行演练</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">运维负责人和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应访谈运维负责人变更中止或失败后的恢复程序，工作方法和职责是否文档化，恢复过程是否经过演练<br>
+            2）应核查是否具有变更恢复演练记录<br>
+            3）应核查变更恢复程序是否规定变更中止或失败的后的恢复流程</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">备份与恢复管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应识别需要定期备份的重要业务信息、系统数据及软件系统等。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">系统管理员和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈系统管理员有哪些需定期备份的业务信息、系统数据及软件系统；<br>
+            2） 应核查是否具有定期备份的重要业务信息、系统数据、软件系统的列表或清单。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">备份与恢复管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应规定备份信息的备份方式、备份频度、存储介质、保存期等。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查备份与恢复管理制度是否明确备份方式、频度、介质、保存期等内容。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">备份与恢复管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应根据数据的重要性和数据对系统运行的影响，制定数据的备份策略和恢复策略、 备份程序和恢复程序等。</span></td>
+            <td style="text-align:justify;vertical-align:middle;"><span style="color:#000000;">管理制度类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查备份和恢复的策略文档是否根据数据的重要程度制定相应备份恢复策略和 程序等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全事件处置</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应及时向安全管理部门报告所发现的安全弱点和可疑事件。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">运维负责人和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈运维负责人是否告知用户在发现安全弱点和可疑事件时及时向安全管理部门 报告；<br>
+            2） 应核查在发现安全弱点和可疑事件后是否具备对应的报告或相关文档。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全事件处置</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应制定安全事件报告和处置管理制度，明确不同安全事件的报告、处置和响应流程， 规定安全事件的现场处理、事件报告和后期恢复的管理职责等。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查安全事件报告和处置管理制度是否明确了与安全事件有关的工作职责、不同 安全事件的报告、处置和响应流程等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全事件处置</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应在安全事件报告和响应处理过程中，分析和鉴定事件产生的原因，收集证据，记录处理过程，总结经验教训</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查安全事件报告和可以的处置记录是否记录引发安全事件的原因、证据、处置过程、经验教训、补救措施等内容</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">安全事件处置</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">对造成系统中断和造成信息泄漏的重大安全事件应采用不同的处理程序和报告程序</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">运维负责人和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1）应访谈运维负责人不同安全事件的报告流程<br>
+            2）应核查针对重大安全事件是否制定不同安全事件报告和处理流程，是否明确具体报告方式、报告内容、报告人等方面内容</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">应急预案管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应规定统一的应急预案框架，包括启动预案的条件、应急组织构成、应急资源保障、事后教育和培训等内容</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查应急预案框架是否覆盖启动应急预案的条件、应急组织构成、应急资源保障、事后教育和培训等方面</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元，标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">应急预案管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应制定重要事件的应急预案，包括应急处理流程、系统恢复流程等内容。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">管理制度类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查是否具有重要事件的应急预案（如针对机房、系统、网络等各个方面）。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">应急预案管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应定期对系统相关的人员进行应急预案培训，并进行应急预案的演练。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">运维负责人和记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈运维负责人是否定期对相关人员进行应急预案培训和演练；<br>
+            2） 应核查应急预案培训记录是否明确培训对象、培训内容、培训结果等；<br>
+            3） 应核查应急预案演练记录是否记录演练时间、主要操作内容、演练结果等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）〜3）均为肯定,则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">应急预案管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应定期对原有的应急预案重新评估，修订完善</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="text-align:justify;vertical-align:middle;"><span style="color:#000000;">应核查应急预案修订记录是否定期评估并修订完善等。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">处包运维管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应确保外包运维服务商的选择符合国家的有关规定。</span></td>
+            <td style="text-align:justify;vertical-align:middle;"><span style="color:#000000;">运维负责人</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">1） 应访谈运维负责人是否有外包运维服务情况；<br>
+            2） 应访谈运维负责人外包运维服务单位是否符合国家有关规定。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果1）和2）均为肯定，则符合本测评单元指标要求，否则不符合或部分符合本测评 单元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">处包运维管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应与选定的外包运维服务商签订相关的协议，明确约定外包运维的范围、工作内容。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查外包运维服务协议是否明确约定外包运维的范围和工作内容。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">处包运维管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应保证选择的外包运维服务商在技术和管理方面均应具有按照等级保护要求开展 安全运维工作的能力，并将能力要求在签订的协议中明确。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查与外包运维服务商签订的协议中是否明确其具有等级保护要求的服务能力。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求，否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">处包运维管理</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"><span style="color:#000000;">应在与外包运维服务商签订的协议中明确所有相关的安全要求，如可能涉及对敏感 信息的访问、处理、存储要求，对IT基础设施中断服务的应急保障要求等。</span></td>
+            <td style="vertical-align:middle;width:244.8pt;"><span style="color:#000000;">记录表单类文档。</span></td>
+            <td style="vertical-align:middle;width:327pt;"><span style="color:#000000;">应核查外包运维服务协议是否包含可能涉及对敏感信息的访问、处理、存储要求，对 IT基础设施中断服务的应急保障要求等内容。</span></td>
+            <td style="vertical-align:middle;width:204pt;"><span style="color:#000000;">如果以上测评实施内容为肯定，则符合本测评单元指标要求,否则不符合本测评单 元指标要求。</span></td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"><span style="color:#000000;">安全物理环境</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">物理位置选择</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"> </td>
+            <td style="vertical-align:middle;width:244.8pt;"> </td>
+            <td style="vertical-align:middle;width:327pt;"> </td>
+            <td style="vertical-align:middle;width:204pt;"> </td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"><span style="color:#000000;">8.1.1</span></td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">物理访问控制</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"> </td>
+            <td style="vertical-align:middle;width:244.8pt;"> </td>
+            <td style="vertical-align:middle;width:327pt;"> </td>
+            <td style="vertical-align:middle;width:204pt;"> </td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">防盗窃和防破坏</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"> </td>
+            <td style="vertical-align:middle;width:244.8pt;"> </td>
+            <td style="vertical-align:middle;width:327pt;"> </td>
+            <td style="vertical-align:middle;width:204pt;"> </td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">防雷击</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"> </td>
+            <td style="vertical-align:middle;width:244.8pt;"> </td>
+            <td style="vertical-align:middle;width:327pt;"> </td>
+            <td style="vertical-align:middle;width:204pt;"> </td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">防火</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"> </td>
+            <td style="vertical-align:middle;width:244.8pt;"> </td>
+            <td style="vertical-align:middle;width:327pt;"> </td>
+            <td style="vertical-align:middle;width:204pt;"> </td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">防水和防潮</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"> </td>
+            <td style="vertical-align:middle;width:244.8pt;"> </td>
+            <td style="vertical-align:middle;width:327pt;"> </td>
+            <td style="vertical-align:middle;width:204pt;"> </td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">防静电</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"> </td>
+            <td style="vertical-align:middle;width:244.8pt;"> </td>
+            <td style="vertical-align:middle;width:327pt;"> </td>
+            <td style="vertical-align:middle;width:204pt;"> </td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">温湿度控制</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"> </td>
+            <td style="vertical-align:middle;width:244.8pt;"> </td>
+            <td style="vertical-align:middle;width:327pt;"> </td>
+            <td style="vertical-align:middle;width:204pt;"> </td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">电力供应</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"> </td>
+            <td style="vertical-align:middle;width:244.8pt;"> </td>
+            <td style="vertical-align:middle;width:327pt;"> </td>
+            <td style="vertical-align:middle;width:204pt;"> </td>
+        </tr><tr><td style="vertical-align:middle;width:96pt;"> </td>
+            <td style="vertical-align:middle;width:112.2pt;"><span style="color:#000000;">电磁防护</span></td>
+            <td style="vertical-align:middle;width:230.4pt;"> </td>
+            <td style="vertical-align:middle;width:244.8pt;"> </td>
+            <td style="vertical-align:middle;width:327pt;"> </td>
+            <td style="vertical-align:middle;width:204pt;"> </td>
+        </tr></tbody></table><p> </p>
+
+<p>来自：GBT28448-2019信息安全技术网络安全等级保护测评要求</p>
+                                    </div>
+
+                </article>
+                <ul class="tags-postTags">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <nav id="gobottom" class="pagination">
+        
+        <span class="prev-next-post">·</span>
+        
+        <a class="next-post" title="文章测试" href="/2019/11/30/%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/">
+            文章测试 →
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</div>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        
+    </div>
+</div>
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+	</div>
+	
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; 哲 &mdash;</small>
+    <h3 class="read-next-card-header-title">最新文章</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2019/11/30/%E7%AD%89%E4%BF%9D2-0%E8%A1%A8%E6%A0%BC/">等保2.0表格</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2019/11/30/%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/">文章测试</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2019/11/30/kali%E8%AE%BE%E7%BD%AE/">kali设置</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
+	<header class="read-next-card-header tagcloud-card">
+		<h3 class="read-next-card-header-title">标签云</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/Debian/" style="font-size: 14px;">Debian</a> <a href="/tags/kali/" style="font-size: 14px;">kali</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px;">工具</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+	
+
+
+
+
+<div id="search" class="search-overlay">
+    <div class="search-form">
+        
+        <div class="search-overlay-logo">
+        	<img src="https://gss0.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/562c11dfa9ec8a13a77d0296f103918fa0ecc065.jpg" alt="哲">
+        </div>
+        
+        <input id="local-search-input" class="search-input" type="text" name="search" placeholder="搜索 ...">
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<div class="copyright">
+			<a href="/" title="哲">哲 &copy; 2019</a>
+			
+				
+			        <span hidden="true" id="/2019/11/30/%E7%AD%89%E4%BF%9D2-0%E8%A1%A8%E6%A0%BC/" class="leancloud-visitors" data-flag-title="等保2.0表格">
+			            <span>阅读量 </span>
+			            <span class="leancloud-visitors-count">0</span>
+			        </span>
+	    		
+    		
+		</div>
+		<nav class="site-footer-nav">
+			
+			<a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+			<a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+		</nav>
+	</div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister()
+            }
+        })
+    }
+</script>
+
+
+<script id="scriptLoad" src="/js/allinone.min.js" async></script>
+
+
+<script>
+    document.getElementById('scriptLoad').addEventListener('load', function () {
+        
+        
+            var bLazy = new Blazy();
+        
+
+        
+        
+
+        
+        
+        
+            searchFunc("/");
+        
+        
+    })
+</script>
+
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+
+
+<script id="valineScript" src="//unpkg.com/valine/dist/Valine.min.js" async></script>
+<script>
+    document.getElementById('valineScript').addEventListener("load", function() {
+        new Valine({
+            el: '#comment' ,
+            verify: false,
+            notify: false,
+            appId: '',
+            appKey: '',
+            placeholder: 'Just go go',
+            pageSize: 10,
+            avatar: 'mm',
+            visitor: true
+        })
+    });
+</script>
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    });
+</script>
+
+
+</body>
+</html>

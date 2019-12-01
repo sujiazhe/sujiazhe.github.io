@@ -162,65 +162,57 @@
                     <p>#生成ssh密匙</p>
 <p>在Debian上创建SSH密钥</p>
 <p>查看是否有密匙<br>ls命令：</p>
-<pre><code class="bash">ls -l ~/.ssh/id_*.pub</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -l ~/.ssh/id_*.pub</span><br></pre></td></tr></table></figure>
+
 <p>如果上述命令的输出包含No such file or directory或no matches found之类的内容，则表明您没有SSH密钥，可以继续下一步并生成新的SSH密钥对。</p>
 <p>如果有现有密钥，则可以使用这些密钥并跳过下一步，或者备份旧密钥并生成新密钥。</p>
 <p>首先使用以下命令生成一个新的4096位SSH密钥对，并将您的电子邮件地址作为注释：</p>
-<pre><code class="bash">ssh-keygen -t rsa -b 4096 -C <span class="string">"your_email@domain.com"</span>
-ssh-keygen -t rsa -C <span class="string">"25464639@qq.com"</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C <span class="string">"your_email@domain.com"</span></span><br><span class="line">ssh-keygen -t rsa -C <span class="string">"25464639@qq.com"</span></span><br></pre></td></tr></table></figure>
+
 <p>输出将类似于以下内容：</p>
-<pre><code class="bash">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/home/yourusername/.ssh/id_rsa):</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/home/yourusername/.ssh/id_rsa):</span><br></pre></td></tr></table></figure>
+
+
 <p>按Enter接受默认文件位置和文件名。</p>
 <p>接下来，系统会提示您输入安全密码。是否要使用密码取决于您自己。有了密码，您的密钥就会增加一层额外的安全保护。</p>
-<pre><code class="bash">Enter passphrase (empty <span class="keyword">for</span> no passphrase):</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):</span><br></pre></td></tr></table></figure>
+
 <p>如果您不想使用密码短语，只需按Enter</p>
 <p>要验证是否生成了SSH密钥对，请输入：</p>
-<pre><code class="bash">ls ~/.ssh/id_*</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls ~/.ssh/id_*</span><br></pre></td></tr></table></figure>
+
 <p>输出应如下所示：</p>
-<pre><code class="bash">/home/yourusername/.ssh/id_rsa /home/yourusername/.ssh/id_rsa.pub</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/home/yourusername/.ssh/id_rsa /home/yourusername/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
 <p>将公钥复制到服务器</p>
 <p>现在您有了SSH密钥对，下一步是将公用密钥复制到要管理的服务器。</p>
 <p>将公钥复制到远程服务器的最简单和建议的方法是使用ssh-copy-id工具。</p>
 <p>在您的本地计算机终端上，调谐以下命令：</p>
-<pre><code class="bash">ssh-copy-id remote_username@server_ip_address</code></pre>
-<p>系统将提示您输入remote_username密码：</p>
-<pre><code class="bash">remote_username@server_ip_address<span class="string">'s password:</span></code></pre>
-<p>用户通过身份验证后，公钥<del>/.ssh/id_rsa.pub将附加到远程用户</del>/.ssh/authorized_keys文件中，并且连接将关闭。</p>
-<pre><code class="bash">Number of key(s) added: 1
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id remote_username@server_ip_address</span><br></pre></td></tr></table></figure>
 
-Now try logging into the machine, with:   <span class="string">"ssh 'username@server_ip_address'"</span>
-and check to make sure that only the key(s) you wanted were added.</code></pre>
-<p>如果本地计算机上没有ssh-copy-id实用程序，则可以使用以下命令复制公钥：</p>
-<pre><code class="bash">cat ~/.ssh/id_rsa.pub | ssh remote_username@server_ip_address <span class="string">"mkdir -p ~/.ssh &amp;&amp; chmod 700 ~/.ssh &amp;&amp; cat &gt;&gt; ~/.ssh/authorized_keys &amp;&amp; chmod 600 ~/.ssh/authorized_keys"</span></code></pre>
+<p>系统将提示您输入remote_username密码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">remote_username@server_ip_address<span class="string">'s password:</span></span><br></pre></td></tr></table></figure>
+
+<p>用户通过身份验证后，公钥<del>/.ssh/id_rsa.pub将附加到远程用户</del>/.ssh/authorized_keys文件中，并且连接将关闭。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Number of key(s) added: 1</span><br><span class="line"></span><br><span class="line">Now try logging into the machine, with:   <span class="string">"ssh 'username@server_ip_address'"</span></span><br><span class="line">and check to make sure that only the key(s) you wanted were added.</span><br><span class="line">```    </span><br><span class="line"></span><br><span class="line">如果本地计算机上没有ssh-copy-id实用程序，则可以使用以下命令复制公钥：</span><br><span class="line">```bash</span><br><span class="line">cat ~/.ssh/id_rsa.pub | ssh remote_username@server_ip_address <span class="string">"mkdir -p ~/.ssh &amp;&amp; chmod 700 ~/.ssh &amp;&amp; cat &gt;&gt; ~/.ssh/authorized_keys &amp;&amp; chmod 600 ~/.ssh/authorized_keys"</span></span><br></pre></td></tr></table></figure>
 <p>Copy<br>使用SSH密钥登录服务器</p>
 <p>这时，您应该能够登录到远程服务器而无需提示输入密码。</p>
 <p>要测试它，请尝试通过SSH连接到服务器：</p>
-<pre><code class="bash">ssh remote_username@server_ip_address</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh remote_username@server_ip_address</span><br></pre></td></tr></table></figure>
+
 <p>如果您尚未设置密码，您将立即登录。否则，将提示您输入密码。<br>禁用SSH密码身份验证</p>
 <p>要为您的服务器添加额外的安全性，您可以禁用SSH的密码身份验证。</p>
 <p>在禁用SSH密码身份验证之前，请确保您可以不使用密码登录服务器，并且您使用的登录用户具有 sudo权限。</p>
-<p>登录到您的远程服务器：</p>
-<pre><code class="bash">ssh sudo_user@server_ip_address
+<p>#登录到您的远程服务器：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh sudo_user@server_ip_address</span><br></pre></td></tr></table></figure>
 
+<p>打开SSH配置文件/etc/ssh/sshd_config：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/ssh/sshd_config</span><br></pre></td></tr></table></figure>
 
-打开SSH配置文件/etc/ssh/sshd_config：
+<p>搜索以下指令并进行如下修改：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/ etc / ssh / sshd_config</span><br><span class="line"></span><br><span class="line">PasswordAuthentication no</span><br><span class="line">ChallengeResponseAuthentication no</span><br><span class="line">UsePAM no</span><br></pre></td></tr></table></figure>
 
-sudo nano /etc/ssh/sshd_config
-
-
-搜索以下指令并进行如下修改：
-
-/ etc / ssh / sshd_config
-
-PasswordAuthentication no
-ChallengeResponseAuthentication no
-UsePAM no
-
-
-完成操作后，保存文件并使用以下命令重新启动SSH服务：
-
-sudo systemctl restart ssh</code></pre>
-
+<p><strong>#完成操作后，保存文件并使用以下命令重新启动SSH服务：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl restart ssh</span><br></pre></td></tr></table></figure>
                 </article>
                 <ul class="tags-postTags">
                     
@@ -367,6 +359,12 @@ sudo systemctl restart ssh</code></pre>
       
       
       <li>
+        <a href="/2019/11/30/%E7%AD%89%E4%BF%9D2-0%E8%A1%A8%E6%A0%BC/">等保2.0表格</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/2019/11/30/%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/">文章测试</a>
       </li>
       
@@ -377,10 +375,6 @@ sudo systemctl restart ssh</code></pre>
       </li>
       
       
-      
-      <li>
-        <a href="/2019/11/30/kali-sources-list/">kali-sources.list</a>
-      </li>
       
       
       
