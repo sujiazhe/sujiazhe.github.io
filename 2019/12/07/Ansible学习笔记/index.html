@@ -190,6 +190,26 @@
 <li>~/ansible.cfg</li>
 <li>/etc/ansible/ansible.cfg</li>
 </ol>
+<h1 id="ansible-cfg常用的配置"><a href="#ansible-cfg常用的配置" class="headerlink" title="ansible.cfg常用的配置"></a>ansible.cfg常用的配置</h1><p>1.inventory<br>该参数表示资源清单inventory文件的位置，资源清单就是一些Ansible需要连接管理的主机列表<br>inventory = /root/ansible/hosts</p>
+<p>2.library<br>Ansible的操作动作，无论是本地或远程，都使用一小段代码来执行，这小段代码称为模块，这个library参数就是指向存放Ansible模块的目录<br>library = /usr/share/ansible</p>
+<p>3.forks<br>设置默认情况下Ansible最多能有多少个进程同时工作，默认设置最多5个进程并行处理。具体需要设置多少个，可以根据控制主机的性能和被管理节点的数量来确定。<br>forks = 5</p>
+<p>4.sudo_user<br>这是设置默认执行命令的用户，也可以在playbook中重新设置这个参数<br>sudo_user = root<br>//注意:新版本已经作了修改，如ansible2.4.1下已经为：<br>default_sudo_user = root </p>
+<p>5.remote_port<br>这是指定连接被关节点的管理端口，默认是22，除非设置了特殊的SSH端口，不然这个参数一般是不需要修改的<br>remote_port = 22</p>
+<p>6.host_key_checking<br>这是设置是否检查SSH主机的密钥。可以设置为True或False<br>host_key_checking = False</p>
+<p>7.timeout<br>这是设置SSH连接的超时间隔，单位是秒。<br>timeout = 20</p>
+<p>8.log_path<br>Ansible系统默认是不记录日志的，如果想把Ansible系统的输出记录到文件中，需要设置log_path来指定一个存储Ansible日志的文件<br>log_path = /var/log/ansible.log</p>
+<p>另外需要注意，执行Ansible的用户需要有写入日志的权限，模块将会调用被管节点的syslog来记录，口令是不会出现的日志中的</p>
+<p>9.private_key_file<br>在使用ssh公钥私钥登录系统时候，使用的密钥路径。<br>private_key_file=/path/to/file.pem</p>
+<h1 id="hosts配置文件"><a href="#hosts配置文件" class="headerlink" title="hosts配置文件"></a>hosts配置文件</h1><p>ssh用户+ssh密码</p>
+<p>[group_name]</p>
+<p>10.0.0.23 ansible_ssh_user=root ansible_ssh_pass=’123123’</p>
+<p>ssh用户+ssh密钥</p>
+<p>[group_name]</p>
+<p>10.0.0.23 ansible_ssh_user=root ansible_ssh_private_key_file=idrsapath</p>
+<p>别名+ssh用户+ssh密钥</p>
+<p>[group_name]</p>
+<p>test1 ansible_ssh_host=10.0.0.23 ansible_ssh_port=22</p>
+<p>ansible_ssh_user=root ansible_ssh_private_key_file=/home/ssh_keys/id_rsa</p>
 
                 </article>
                 <ul class="tags-postTags">
@@ -201,6 +221,10 @@
 
     
     <nav id="gobottom" class="pagination">
+        
+        <a class="prev-post" title="docker命令" href="/2019/12/08/docker%E5%91%BD%E4%BB%A4/">
+            ← docker命令
+        </a>
         
         <span class="prev-next-post">·</span>
         
@@ -231,7 +255,7 @@
         </a>
     </div>
     <div class="toc-main">
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#自动化任务执行的应用"><span class="toc-text">自动化任务执行的应用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Ansible基础和安装"><span class="toc-text">Ansible基础和安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Aansible安装"><span class="toc-text">Aansible安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Ansible的配置文件"><span class="toc-text">Ansible的配置文件</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#自动化任务执行的应用"><span class="toc-text">自动化任务执行的应用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Ansible基础和安装"><span class="toc-text">Ansible基础和安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Aansible安装"><span class="toc-text">Aansible安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Ansible的配置文件"><span class="toc-text">Ansible的配置文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ansible-cfg常用的配置"><span class="toc-text">ansible.cfg常用的配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#hosts配置文件"><span class="toc-text">hosts配置文件</span></a></li></ol>
     </div>
 </div>
 
@@ -333,6 +357,12 @@
       
       
       <li>
+        <a href="/2019/12/08/docker%E5%91%BD%E4%BB%A4/">docker命令</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/2019/12/07/Ansible%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Ansible学习笔记</a>
       </li>
       
@@ -343,10 +373,6 @@
       </li>
       
       
-      
-      <li>
-        <a href="/2019/11/30/%E7%AD%89%E4%BF%9D2-0%E8%A1%A8%E6%A0%BC/">等保2.0表格</a>
-      </li>
       
       
       
